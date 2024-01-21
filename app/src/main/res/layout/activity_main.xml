@@ -55,4 +55,62 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageview_moviePoster"
         app:srcCompat="@drawable/img_1" />
+
+    <ImageView
+        android:id="@+id/imageView_status1"
+        android:layout_width="80dp"
+        android:layout_height="74dp"
+        app:srcCompat="@drawable/img_4"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="450dp" />
+
+    <TextView
+        android:id="@+id/textView_status1"
+        android:layout_width="89dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:text="share"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_status1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView_status1"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_status1" />
+
+    <ImageView
+        android:id="@+id/imageView_status2"
+        android:layout_width="81dp"
+        android:layout_height="78dp"
+        app:srcCompat="@drawable/img_3"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="450dp" />
+
+    <TextView
+        android:id="@+id/textView_status2"
+        android:layout_width="110dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:text="download"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_status2"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="@+id/imageView_status2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_status2" />
+
+    <ImageView
+        android:id="@+id/imageView_status3"
+        android:layout_width="87dp"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/img_2"
+        tools:layout_editor_absoluteX="226dp"
+        tools:layout_editor_absoluteY="450dp" />
+
+    <TextView
+        android:id="@+id/textView_status3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="252dp"
+        tools:layout_editor_absoluteY="565dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
