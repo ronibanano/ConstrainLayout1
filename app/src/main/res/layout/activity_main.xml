@@ -20,19 +20,19 @@
         android:id="@+id/textview_movieName"
         android:layout_width="150dp"
         android:layout_height="51dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
         android:text="AVATAR"
         android:textAlignment="center"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintHorizontal_bias="0.613"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageview_moviePoster" />
 
     <TextView
         android:id="@+id/textview_movieTagline"
         android:layout_width="235dp"
-        android:layout_height="79dp"
+        android:layout_height="86dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="317dp"
@@ -44,7 +44,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textview_movieName"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -60,9 +60,12 @@
         android:id="@+id/imageView_status1"
         android:layout_width="80dp"
         android:layout_height="74dp"
-        app:srcCompat="@drawable/img_4"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="450dp" />
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_status2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_movieTagline"
+        app:srcCompat="@drawable/img_4" />
 
     <TextView
         android:id="@+id/textView_status1"
@@ -79,11 +82,13 @@
 
     <ImageView
         android:id="@+id/imageView_status2"
-        android:layout_width="81dp"
-        android:layout_height="78dp"
-        app:srcCompat="@drawable/img_3"
-        tools:layout_editor_absoluteX="131dp"
-        tools:layout_editor_absoluteY="450dp" />
+        android:layout_width="84dp"
+        android:layout_height="75dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_status3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView_status1"
+        app:layout_constraintTop_toTopOf="@+id/imageView_status1"
+        app:srcCompat="@drawable/img_3" />
 
     <TextView
         android:id="@+id/textView_status2"
@@ -100,17 +105,79 @@
 
     <ImageView
         android:id="@+id/imageView_status3"
-        android:layout_width="87dp"
-        android:layout_height="82dp"
-        app:srcCompat="@drawable/img_2"
-        tools:layout_editor_absoluteX="226dp"
-        tools:layout_editor_absoluteY="450dp" />
+        android:layout_width="86dp"
+        android:layout_height="74dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_status4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView_status2"
+        app:layout_constraintTop_toTopOf="@+id/imageView_status1"
+        app:srcCompat="@drawable/img_2" />
 
     <TextView
         android:id="@+id/textView_status3"
+        android:layout_width="56dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="16dp"
+        android:text="like"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_status3"
+        app:layout_constraintStart_toStartOf="@+id/imageView_status3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_status3" />
+
+    <ImageView
+        android:id="@+id/imageView_status4"
+        android:layout_width="87dp"
+        android:layout_height="74dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView_status3"
+        app:layout_constraintTop_toTopOf="@+id/imageView_status1"
+        app:srcCompat="@drawable/img_5" />
+
+    <TextView
+        android:id="@+id/textView_status4"
+        android:layout_width="60dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:text="info"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_status4"
+        app:layout_constraintStart_toStartOf="@+id/imageView_status4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_status4" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_status1" />
+
+    <TextView
+        android:id="@+id/textView_plotSummaryTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="252dp"
-        tools:layout_editor_absoluteY="565dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Plot Summary"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/textView_plotSummary"
+        android:layout_width="387dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="8dp"
+        android:text="Avatar, American science fiction film series and media franchise created by director James Cameron. The films follow a U.S. Marine named Jake Sully (Sam Worthington) who becomes part of a program in which human colonizers explore and exploit an alien world called Pandora."
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/textView_plotSummaryTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textView_plotSummaryTitle" />
 </androidx.constraintlayout.widget.ConstraintLayout>
