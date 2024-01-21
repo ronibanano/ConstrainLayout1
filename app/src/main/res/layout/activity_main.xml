@@ -33,7 +33,7 @@
         android:id="@+id/textview_movieTagline"
         android:layout_width="235dp"
         android:layout_height="86dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="317dp"
         android:text="Avatar is a 2009 epic science fiction film directed, written, co-produced, and co-edited by James Cameron"
@@ -44,7 +44,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textview_movieName"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.541" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -180,4 +180,25 @@
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="@+id/textView_plotSummaryTitle"
         app:layout_constraintTop_toBottomOf="@+id/textView_plotSummaryTitle" />
+
+    <ImageView
+        android:id="@+id/imageView_starRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageview_moviePoster"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <TextView
+        android:id="@+id/textView_starRating"
+        android:layout_width="26dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="5dp"
+        android:text="8.8"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_starRating"
+        app:layout_constraintStart_toStartOf="@+id/imageView_starRating"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_starRating" />
 </androidx.constraintlayout.widget.ConstraintLayout>
